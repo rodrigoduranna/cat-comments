@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,700);
+
+body {
+    background-color: #FAFAFA;
+}
+
+h1 {
+    color: #FFFFFF;
+    background: #2196F3;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin :-10px;
+}
+
+.author {
+    color: #000000;
+    background: #90CAF9;
+    padding: 15px;
+    margin-top: 10px;
+    margin-right: -10px;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.textArea {
+    width: 300px;
+    height: 30px;
+}
+
+.description {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px; 
+}
+
+.info {
+
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: right;
+}
+
+.comments {
+    color: #FFFFFF;
+    background: #EC407A;
+    padding: 18px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 24px;  
+}
+
+ul {
+    background: #FAFAFA;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: justify;
+    list-style-type: none;
+    border-style: dashed;
+    border-width: 1px;
+}
+
+ul li {
+    background: #FAFAFA;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.btn-class{
+ display: inline-block;
+ border:3px solid #c9ae34;
+ color: #705D07;
+ border-radius: 3px 3px 3px 3px;
+ -webkit-border-radius: 3px 3px 3px 3px;
+ -moz-border-radius: 3px 3px 3px 3px;
+ font-family: Verdana;
+ width: auto;
+ height: auto;
+ font-size: 23px;
+ padding: 15px 45px;
+ box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d,0 2px 4px 0 #D4D4D4;
+ -moz-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d,0 2px 4px 0 #D4D4D4;
+ -webkit-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d,0 2px 4px 0 #D4D4D4;
+ text-shadow: 0 1px 0 #fff;
+ background-image: linear-gradient(to top, #fce374, #fcdf5b);
+ background-color: #fce374;
+}
+.btn-class:hover, .btn-class:active{
+ border:3px solid #967d09;
+ color: #705D07;
+ box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d;
+ -moz-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d;
+ -webkit-box-shadow: inset 0 1px 0 0 #fff6ce,inset 0 -1px 0 0 #e3c852,inset 0 0 0 1px #fce88d;
+ background-color: #fcdf5b;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "YCAT-package",
+  "description": "YouTube Categorization and Annotation Tool",
+  "license": "MIT",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodrigoduranna/cat-comments.git"
+  },
+  "dependencies": {
+    "angular-file-saver": "^1.1.0",
+    "angular-local-storage": "^0.2.6"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="myCtrl.js"></script>
+<script type="text/javascript"></script>
+
+<head> <link rel="stylesheet" type="text/css" href="myCss.css"> </head>
+<body>
+<div ng-app="myApp" ng-controller="commentsCtrl">
+ 	
+ 	<h1> {{data.title}} </h1>
+ 	<p class="author">{{data.author}} </p>
+ 	<p class="description">{{data.description}} </p>
+ 	<p class="info"><b>{{data.views}} views </b>. Extracted on {{data.extracted}} </p>
+
+ 	<p class="comments">Comments</p>
+
+	<script type="text/ng-template" id="categoryTree">
+		<li>
+		<select ng-model="response.selpxp" ng-options="x.name for x in pxp"></select>
+		<select ng-model="response.selmot" ng-options="x.name for x in motivation"></select>
+		<b> {{response.author}} </b>: {{response.content}}
+		<p> Annotations : <textarea ng-model="response.annotation" rows=3 cols=50> </textarea></p>
+		</li>
+		<ul ng-if="check(response.replies) " >
+		    <li ng-repeat="reply in response.replies" ng-include="'categoryTree'" ng-init="response=reply"></li>
+		</ul>
+	</script>
+                                                                      
+    <ul>
+	    <li ng-repeat="response in comments" ng-include="'categoryTree'"></li>
+	</ul> 
+
+	<p><input class="btn-class" type="button" value="Save" style="float: right;"></input></p>
+</div>
+</body>
+</html>
